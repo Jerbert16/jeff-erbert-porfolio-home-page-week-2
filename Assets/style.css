@@ -44,7 +44,10 @@ nav a {
     display: inline-flex;
     color: var(--seafoam);
     font-size: 20px;
-    padding: 0px 15px;
+    padding: 10px 10px 5px 10px;
+    text-decoration: none;
+    border-bottom: solid var(--seafoam) 3px;
+    margin-left: 10px;
 }
 
 
