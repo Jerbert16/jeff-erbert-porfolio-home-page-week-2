@@ -60,29 +60,37 @@ main {
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
-    border: red dotted 1px;
     background-color: white;
 }
 
 .subtitle {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+    margin-right: 5em;
+    padding: 10px;
+    font-size: 20px;
     color: var(--dk-bl);
     background-color: var(--seafoam);
 }
 
 aside {
     display: flex;
-    justify-content:center;
-    background-color: white;
+    justify-content:flex-end;
+    background-color: rgb(161, 94, 94);
     border-right: solid var(--dk-bl) 3px;
+    width: 500px;
+    height: 300px;
 }
 
 section p{
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
-    width: 50%;
+    background-color: rgb(131, 184, 124);
+    width: 1400px;
+    height: 300px;
+    padding: 10px;
 
 }
 
