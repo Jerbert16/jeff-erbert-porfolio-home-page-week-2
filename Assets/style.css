@@ -84,11 +84,13 @@ aside {
     height: 300px;
 }
 
-section p{
-    display: flex;
-    flex-wrap: wrap;
+p {
+    color: white;
+}
+
+section {
     background-color: rgb(131, 184, 124);
-    width: 1400px;
+    width: 1300px;
     height: 300px;
     padding: 10px;
 
