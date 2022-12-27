@@ -8,7 +8,7 @@
 }
 
 p {
-  padding: 5px;
+  padding: 8px;
 }
 
 h1 {
@@ -19,6 +19,11 @@ h1 {
   padding: 10px 15px;
   background-color: var(--seafoam);
   font-size: 42px;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: right;
 }
 
 h3 {
@@ -44,7 +49,7 @@ h4 {
 }
 
 header {
-  display: inline-flex;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
@@ -54,7 +59,7 @@ header {
 }
 
 .main-menu {
-  display: inline-flex;
+  display: flex;
   justify-content: flex-end;
   width: 80em;
   margin-left: 0px;
@@ -71,11 +76,8 @@ nav a {
 }
 
 main {
-  display: inline-flex;
+  display:flex;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
   background-color: white;
 }
 
@@ -83,9 +85,12 @@ main {
   margin-bottom: 4em;
   margin-right: 4em;
   padding: 10px;
-  font-size: 20px;
   color: var(--dk-bl);
   background-color: var(--seafoam);
+}
+
+.subtitle > h2 {
+  font-size: 20px;
 }
 
 section {
@@ -96,37 +101,35 @@ section {
 }
 
 aside {
-  display: block;
-  width: 200px;
-  height: 300px;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  width: 20%;
+  height: 200px;
+  padding: 10px 15px 0px 0px;
+  text-align: right;
+  color: #324054;
+}
+
+#about-me {
+  margin-top: 50px;
 }
 
 .about-me-paragraphs {
-  width: 70%;
-  margin-top: 35px;
-  margin-bottom: 40px;
-  padding: 5px 0px 10px 0px;
+  width: 80%;
+  padding: 10px 80px 20px 20px;
+  margin: 50px 0px 50px 0px;
   color: #324054;
   line-height: 1.5;
   font-size: 18px;
-}
-
-.about {
-  font-size: 50px;
-  text-align: right;
-  padding-right: 15px;
-  margin-top: 37px;
-  color: #324054;
-  border-right: solid #324054 4px;
-  width: 200px;
-  height: 245px;
-  margin-right: 40px;
+  border-left: solid 4px;
 }
 
 .work-examples-section {
-  height: 735px;
-  width: 70%;
+  height: 70%;
+  width: 80%;
+  border-left: solid 4px;
+  color: #324054;
+  padding: 10px 100px 20px 25px;
+  margin-bottom: 50px;
 }
 
 .surf-report {
@@ -135,7 +138,10 @@ aside {
   background-image: url(./wave.jpg);
   background-position: center;
   border: solid #92cccd 6px;
-  margin-top: 15px;
+}
+
+.surf-report:hover {
+  filter: opacity(0.5);
 }
 
 .surf-box {
@@ -143,6 +149,7 @@ aside {
   width: 165px;
   height: 70px;
   margin-top: 30%;
+  margin-bottom: 30px;
   padding-top: 7px;
   padding-left: 8px;
   background-color: #92cccd;
@@ -151,12 +158,17 @@ aside {
 }
 
 .led-wall {
-  width: 490px;
+  width: 49.5%;
   height: 150px;
-  margin-top: 13px;
+  margin-top: 10px;
+  padding-right: 6px;
   border: solid #92cccd 6px;
   background-image: url(./leds.jpg);
   background-position: center;
+}
+
+.led-wall:hover {
+  filter: opacity(0.5);
 }
 
 .led-box {
@@ -172,12 +184,16 @@ aside {
 }
 
 .calculator {
-  width: 490px;
+  width: 49.5%;
   height: 150px;
-  margin-top: 13px;
+  margin-top: 10px;
   border: solid #92cccd 6px;
   background-image: url(./calculator.jpg);
   background-position: center;
+}
+
+.calculator:hover {
+  filter: opacity(0.5);
 }
 
 .calculator-box {
@@ -193,12 +209,16 @@ aside {
 }
 
 .pastel-puzzles {
-  width: 490px;
+  width: 49.5%;
   height: 150px;
-  margin-top: 13px;
+  margin-top: 10px;
   border: solid #92cccd 6px;
   background-image: url(./puzzle.jpg);
   background-position: center;
+}
+
+.pastel-puzzles:hover {
+  filter: opacity(0.5);
 }
 
 .pastel-puzzles-box {
@@ -214,12 +234,16 @@ aside {
 }
 
 .run-buddy {
-  width: 490px;
+  width: 49.5%;
   height: 150px;
-  margin-top: 13px;
+  margin-top: 10px;
   border: solid #92cccd 6px;
   background-image: url(./Run.jpg);
   background-position: center;
+}
+
+.run-buddy:hover {
+  filter: opacity(0.5);
 }
 
 .run-buddy-box {
@@ -234,51 +258,16 @@ aside {
   line-height: 1.5;
 }
 
-.my-work {
-  font-size: 50px;
-  text-align: right;
-  padding-right: 15px;
-  color: #324054;
-  width: 200px;
-  height: 740px;
-  border-right: solid #324054 4px;
-  margin-right: 40px;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact-me {
-  font-size: 50px;
-  text-align: right;
-  padding-right: 15px;
-  color: #324054;
-  border-right: solid #324054 4px;
-  width: 210px;
-  height: 150px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  position: relative;
-}
-
 .contact-me-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border: dotted blueviolet 2px;
-  width: 1050px;
+  width: 100%;
   height: 150px;
-  margin-top: 15px;
+  border-left: solid #324054 4px;
+  padding: 50px;
 }
 
 .contact-me-nav a {
-  border: dotted blue 1px;
-  margin: 0em 2em 0em 2em;
   border-bottom: solid var(--dk-bl) 3px;
   color: var(--dk-bl);
   font-weight: bold;
+  margin: 5px 40px 5px 40px;
 }
