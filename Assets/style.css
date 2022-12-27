@@ -21,6 +21,18 @@ h1 {
   font-size: 42px;
 }
 
+h3 {
+    font-size: 26px;
+    text-align: left;
+}
+
+h4 {
+    font-size: 12px;
+    text-align: left;
+    font-weight: lighter;
+
+}
+
 .hero-img {
   display: flex;
   align-items: flex-end;
@@ -114,7 +126,6 @@ aside {
 }
 
 .work-examples-section {
-  border: dotted blue 1px;
   height: 735px;
   width: 70%;
 }
@@ -122,44 +133,106 @@ aside {
 .surf-report {
   width: 100%;
   height: 55%;
-  background-color: aqua;
-  border: solid #92cccd 5px;
+  background-image: url(./wave.jpg);
+  background-position: center;
+  border: solid #92cccd 6px;
   margin-top: 15px;
 }
 
-.surf-report-box {
+.surf-box {
   position: relative;
-  border: dotted black 1px;
-  width: 150px;
+  width: 165px;
+  height: 70px;
   margin-top: 30%;
+  padding-top: 7px;
+  padding-left: 8px;
+  background-color: #92cccd;
+  color: #324054;
+  line-height: 1.5;
 }
 
 .led-wall {
-  width: 495px;
+  width: 490px;
   height: 150px;
-  border: solid #92cccd 5px;
-  background-color: red;
+  margin-top: 13px;
+  border: solid #92cccd 6px;
+  background-image: url(./leds.jpg);
+  background-position: center;
+}
+
+.led-box {
+    position: relative;
+    width: 130px;
+    height: 70px;
+    margin-top: 45px;
+    padding-top: 7px;
+    padding-left: 8px;
+    background-color: #92cccd;
+    color: #324054;
+    line-height: 1.5;
 }
 
 .calculator {
-  width: 495px;
+  width: 490px;
   height: 150px;
-  border: solid #92cccd 5px;
-  background-color: greenyellow;
+  margin-top: 13px;
+  border: solid #92cccd 6px;
+  background-image: url(./calculator.jpg);
+  background-position: center;
+}
+
+.calculator-box {
+    position: relative;
+    width: 147px;
+    height: 70px;
+    margin-top: 45px;
+    padding-top: 7px;
+    padding-left: 8px;
+    background-color: #92cccd;
+    color: #324054;
+    line-height: 1.5;
 }
 
 .pastel-puzzles {
-  width: 495px;
+  width: 490px;
   height: 150px;
-  border: solid #92cccd 5px;
-  background-color: peru;
+  margin-top: 13px;
+  border: solid #92cccd 6px;
+  background-image: url(./puzzle.jpg);
+  background-position: center;
+}
+
+.pastel-puzzles-box {
+    position: relative;
+    width: 200px;
+    height: 70px;
+    margin-top: 45px;
+    padding-top: 7px;
+    padding-left: 8px;
+    background-color: #92cccd;
+    color: #324054;
+    line-height: 1.5;
 }
 
 .run-buddy {
-  width: 495px;
+  width: 490px;
   height: 150px;
-  border: solid #92cccd 5px;
-  background-color: magenta;
+  margin-top: 13px;
+  border: solid #92cccd 6px;
+  background-image: url(./Run.jpg);
+  background-position: center;
+}
+
+.run-buddy-box {
+    position: relative;
+    width: 157px;
+    height: 70px;
+    margin-top: 45px;
+    padding-top: 7px;
+    padding-left: 8px;
+    background-color: #92cccd;
+    color: #324054;
+    line-height: 1.5;
 }
 
 .my-work {
