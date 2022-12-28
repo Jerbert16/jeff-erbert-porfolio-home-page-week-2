@@ -22,8 +22,9 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 3em;
   text-align: right;
+  padding: 5px;
 }
 
 h3 {
@@ -76,7 +77,7 @@ nav a {
 }
 
 main {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   background-color: white;
 }
@@ -115,7 +116,7 @@ aside {
 
 .about-me-paragraphs {
   width: 80%;
-  padding: 10px 80px 20px 20px;
+  padding: 2em;
   margin: 50px 0px 50px 0px;
   color: #324054;
   line-height: 1.5;
@@ -258,16 +259,91 @@ aside {
   line-height: 1.5;
 }
 
-.contact-me-nav {
-  width: 100%;
-  height: 150px;
+footer {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
   border-left: solid #324054 4px;
+  height: 150px;
   padding: 50px;
+}
+
+.contact-me-nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .contact-me-nav a {
   border-bottom: solid var(--dk-bl) 3px;
   color: var(--dk-bl);
   font-weight: bold;
-  margin: 5px 40px 5px 40px;
+  margin: 0em 1em 0em 1em;
+}
+
+@media screen and (max-width: 953px) {
+  aside {
+    color: #324054;
+    font-size: 12px;
+    width: 25%;
+    height: 8em;
+    margin: 0px;
+  }
+
+  .about-me-paragraphs {
+    width: 100%;
+    border: none;
+    margin: 0px;
+  }
+
+  h2 {
+    text-align: center;
+    border-bottom: #92cccd solid 4px;
+    width: auto;
+    padding: 10px;
+  }
+
+  main {
+    justify-content: center;
+  }
+
+  .work-examples-section {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 50px;
+    border: none;
+  }
+
+  footer {
+    width: 100%;
+    border: none;
+  }
+
+  .subtitle {
+    margin-bottom: 4em;
+    margin-right: 4em;
+    padding: 0px;
+  }
+
+  .contact-me-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-me-nav a {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    width: 100%;
+    background-color: #324054;
+    color: #92cccd;
+    font-weight: bold;
+    margin: 5px 0px 10spx 0px;
+  }
+
+  nav a {
+    color: white;
+    border-bottom: solid white 3px;
+  }
+
 }
