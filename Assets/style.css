@@ -276,7 +276,6 @@ footer {
 }
 
 @media screen and (max-width: 953px) {
-
   h2 {
     text-align: center;
     border-bottom: var(--seafoam) solid 4px;
@@ -313,7 +312,7 @@ footer {
 
   .work-examples-section {
     width: 100%;
-    padding: 20px;
+    padding: 1em;
     border: none;
   }
 
