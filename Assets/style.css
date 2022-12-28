@@ -63,7 +63,6 @@ header {
   display: flex;
   justify-content: flex-end;
   width: 80em;
-  margin-left: 0px;
 }
 
 nav a {
@@ -83,8 +82,7 @@ main {
 }
 
 .subtitle {
-  margin-bottom: 4em;
-  margin-right: 4em;
+  margin: 0em 4em 4em 0em;
   padding: 10px;
   color: var(--dk-bl);
   background-color: var(--seafoam);
@@ -102,12 +100,11 @@ section {
 }
 
 aside {
-  flex-wrap: wrap;
   width: 20%;
   height: 200px;
   padding: 10px 15px 0px 0px;
   text-align: right;
-  color: #324054;
+  color: var(--dk-bl);
 }
 
 #about-me {
@@ -118,7 +115,7 @@ aside {
   width: 80%;
   padding: 2em;
   margin: 50px 0px 50px 0px;
-  color: #324054;
+  color: var(--dk-bl);
   line-height: 1.5;
   font-size: 18px;
   border-left: solid 4px;
@@ -128,7 +125,7 @@ aside {
   height: 70%;
   width: 80%;
   border-left: solid 4px;
-  color: #324054;
+  color: var(--dk-bl);
   padding: 10px 100px 20px 25px;
   margin-bottom: 50px;
 }
@@ -138,7 +135,7 @@ aside {
   height: 55%;
   background-image: url(./wave.jpg);
   background-position: center;
-  border: solid #92cccd 6px;
+  border: solid var(--seafoam) 6px;
 }
 
 .surf-report:hover {
@@ -151,10 +148,8 @@ aside {
   height: 70px;
   margin-top: 30%;
   margin-bottom: 30px;
-  padding-top: 7px;
-  padding-left: 8px;
-  background-color: #92cccd;
-  color: #324054;
+  background-color: var(--seafoam);
+  color: var(--dk-bl);
   line-height: 1.5;
 }
 
@@ -162,8 +157,7 @@ aside {
   width: 49.5%;
   height: 150px;
   margin-top: 10px;
-  padding-right: 6px;
-  border: solid #92cccd 6px;
+  border: solid var(--seafoam) 6px;
   background-image: url(./leds.jpg);
   background-position: center;
 }
@@ -179,8 +173,8 @@ aside {
   margin-top: 45px;
   padding-top: 7px;
   padding-left: 8px;
-  background-color: #92cccd;
-  color: #324054;
+  background-color: var(--seafoam);
+  color: var(--dk-bl);
   line-height: 1.5;
 }
 
@@ -188,7 +182,7 @@ aside {
   width: 49.5%;
   height: 150px;
   margin-top: 10px;
-  border: solid #92cccd 6px;
+  border: solid var(--seafoam) 6px;
   background-image: url(./calculator.jpg);
   background-position: center;
 }
@@ -204,8 +198,8 @@ aside {
   margin-top: 45px;
   padding-top: 7px;
   padding-left: 8px;
-  background-color: #92cccd;
-  color: #324054;
+  background-color: var(--seafoam);
+  color: var(--dk-bl);
   line-height: 1.5;
 }
 
@@ -213,7 +207,7 @@ aside {
   width: 49.5%;
   height: 150px;
   margin-top: 10px;
-  border: solid #92cccd 6px;
+  border: solid var(--seafoam) 6px;
   background-image: url(./puzzle.jpg);
   background-position: center;
 }
@@ -229,8 +223,8 @@ aside {
   margin-top: 45px;
   padding-top: 7px;
   padding-left: 8px;
-  background-color: #92cccd;
-  color: #324054;
+  background-color: var(--seafoam);
+  color: var(--dk-bl);
   line-height: 1.5;
 }
 
@@ -238,7 +232,7 @@ aside {
   width: 49.5%;
   height: 150px;
   margin-top: 10px;
-  border: solid #92cccd 6px;
+  border: solid var(--seafoam) 6px;
   background-image: url(./Run.jpg);
   background-position: center;
 }
@@ -254,8 +248,8 @@ aside {
   margin-top: 45px;
   padding-top: 7px;
   padding-left: 8px;
-  background-color: #92cccd;
-  color: #324054;
+  background-color: var(--seafoam);
+  color: var(--dk-bl);
   line-height: 1.5;
 }
 
@@ -263,7 +257,7 @@ footer {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
-  border-left: solid #324054 4px;
+  border-left: solid var(--dk-bl) 4px;
   height: 150px;
   padding: 50px;
 }
@@ -282,8 +276,29 @@ footer {
 }
 
 @media screen and (max-width: 953px) {
+
+  h2 {
+    text-align: center;
+    border-bottom: var(--seafoam) solid 4px;
+    width: auto;
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  main {
+    justify-content: center;
+  }
+
+  .hero-img {
+    min-width: 30%;
+  }
+
   aside {
-    color: #324054;
+    color: var(--dk-bl);
     font-size: 12px;
     width: 25%;
     height: 8em;
@@ -296,22 +311,18 @@ footer {
     margin: 0px;
   }
 
-  h2 {
-    text-align: center;
-    border-bottom: #92cccd solid 4px;
-    width: auto;
-    padding: 10px;
-  }
-
-  main {
-    justify-content: center;
-  }
-
   .work-examples-section {
     width: 100%;
     padding: 20px;
-    margin-bottom: 50px;
     border: none;
+  }
+
+  .pastel-puzzles-box {
+    width: 150px;
+  }
+
+  .run-buddy-box {
+    width: 120px;
   }
 
   footer {
@@ -332,18 +343,12 @@ footer {
 
   .contact-me-nav a {
     display: flex;
-    justify-content: left;
-    text-align: center;
-    width: 100%;
-    background-color: #324054;
-    color: #92cccd;
+    justify-content: center;
+    width: auto;
+    background-color: var(--dk-bl);
+    border-radius: 5px;
+    color: rgb(240, 240, 240);
     font-weight: bold;
-    margin: 5px 0px 10spx 0px;
+    margin: 0px 10px 15px 10px;
   }
-
-  nav a {
-    color: white;
-    border-bottom: solid white 3px;
-  }
-
 }
