@@ -44,4 +44,4 @@ https://jerbert16.github.io/jeff-erbert-porfolio-home-page-week-2/
 
 The following animation shows the web application's intended appearance and functionality:
 
-![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
+![portfolio demo](./Assets/images/02-advanced-css-homework-demo.gif)
