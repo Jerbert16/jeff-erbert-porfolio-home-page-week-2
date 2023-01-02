@@ -38,7 +38,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 ## Deployed Application:
 
-https://jerbert16.github.io/portfolio-page-home-week-2/
+https://jerbert16.github.io/jeff-erbert-porfolio-home-page-week-2/
 
 ## Mock-Up
 
